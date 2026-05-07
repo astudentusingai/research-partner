@@ -10,7 +10,7 @@ st.title("🔬 Personal Research Partner")
 # Use secret API key from Streamlit Cloud
 api_key = st.secrets["GEMINI_API_KEY"]
 genai.configure(api_key=api_key)
-model = genai.GenerativeModel('gemini-1.5-flash')
+model = genai.GenerativeModel('gemini-flash-latest')
 
 # 2. Sidebar for Research Files
 with st.sidebar:
